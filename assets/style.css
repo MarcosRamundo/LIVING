@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+.contenedor{
+    display: grid;
+    background-color: rgba(56, 52, 52, 0.192);
+    grid-template-columns: 220px 1fr 1fr 220px;
+    grid-template-rows: 25px 100px auto auto auto;
+    grid-template-areas: "div div div div"  
+                        "header header  header  header"
+                        "section section section section"
+                        "main main main main"
+                        "footer footer footer footer";
+}
+
+.encabezado{
+    grid-area: div;
+    background-color: rgb(8, 2, 2);
+}
+
+.encabezado h4{   
+    font-size: 12px;
+    text-align: center;
+    color: rgb(188, 212, 231);
+    font-weight: bolder;
+    padding: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1{
+    color: rgb(9, 24, 37);
+    font-size: 45px;
+    margin: 30px;
+}
+
+.header ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 20px;
+    padding: 25px;
+}
+
+.header a{
+    text-decoration: none;
+    color: rgb(9, 24, 37);
+    padding: 15px;
+    font-family: Montserrat,sans-serif;
+    font-weight: bolder;
+
+}
+
+@media (max-width: 300px){
+    .contenedor{
+        grid-template-rows: 15px auto 10px;
+    }
+    .encabezado{
+        height: 10px;
+    }
+    .encabezado h4{
+        font-size: 7px;
+    }
+    .header h1{
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .header ul li{
+        flex-direction: column;
+        font-size: 15px;
+        margin: 0;
+        padding: 5px;
+    }
+    .sectionInicio{
+        width: auto;
+        order: 1;
+    }
+  
+}
+
+@media (max-width: 600px){
+    .contenedor{
+        grid-template-rows: 15px auto 10px;
+    }
+    .encabezado{
+        height: 10px;
+    }
+    .encabezado h4{
+        font-size: 7px;
+    }
+    .header h1{
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .header ul li{
+        flex-direction: column;
+        font-size: 15px;
+        margin: 0;
+        padding: 5px;
+    }
+    .sectionInicio{
+        width: auto;
+        order: 1; 
+    }
+    }
+
+    @media (max-width: 800px){
+        .contenedor{
+            grid-template-rows: 15px auto 10px;
+        }
+        .encabezado{
+            height: 15px;
+        }
+        .encabezado h4{
+            font-size: 10px;
+        }
+        .header h1{
+            flex-direction: column;
+            font-size: 25px;
+        }
+        .header ul li{
+            flex-direction: column;
+            font-size: 20px;
+            margin: 0;
+            padding: 10px;
+        }
+        .sectionInicio{
+            width: auto;
+            order: 1; 
+        }
+    
+        }
+
+
+.sectionInicio{
+    grid-area: section;
+    height: 700px;
+    background-image: url(../assets/img/Home.jpeg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(32, 38, 43);
+    font-size: 35px;
+    padding-top: 60px;
+}
+
+.section2{
+    grid-area: section;
+    background-color: rgb(0, 0, 0);
+}
+
+.section2 h3{
+    font-size: 30px;
+    margin: 15px;
+    color: #ffffff;
+    font-family: Montserrat,sans-serif;
+}
+
+.section2 h4{
+    font-size: 20px;
+    margin: 15px;
+    color: #ffffff;
+    font-family: Montserrat,sans-serif;
+}
+
+.tarjetasTienda img{
+    width: 250px;
+    height: 250px;
+}
+
+
+.btnTienda{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+
+.main{
+    grid-area: main;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main div h6 {
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+main div p{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+}
+
+footer{
+    grid-area: footer;
+    padding: 20px;
+    height: 300px;
+    background-color: black;
+}
+
+footer p{
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+footer img {
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.contactos{
+    display: flex; 
+     flex-direction: row    ;
+     width: 100%;
+     height: 100%;
+}
+.contacto {
+    background-image: url(../assets/img/logo.jpeg);
+}
+
+article{
+    width: 100%;
+}
+
+form{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    background: rgba (1,0,0,0.4);
+    padding: 10px 20px;
+    border-radius: 10px; 
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+    background: rgb(9, 24, 37);
+    color: #fff;
+    border-radius: 7px;
+    font-size: 15px;
+
+}
+
+#boton{
+    background: rgb(9, 24, 37);
+    color: #fff;
+    padding: 20px;
+}
+
+#botton:hover{
+    cursor: pointer;
+}
+
