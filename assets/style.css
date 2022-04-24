@@ -163,6 +163,15 @@
     font-family: Montserrat,sans-serif;
 }
 
+.animacionSection{
+    height:  100px;
+    transition: 2s;
+}
+
+.animacionSection:hover{
+    height: 200px;
+}
+
 .section2 h4{
     font-size: 20px;
     margin: 15px;
