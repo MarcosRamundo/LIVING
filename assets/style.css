@@ -151,6 +151,11 @@
     padding-top: 60px;
 }
 
+.sectionInicio h2:hover{
+    font-size: 80px;
+    color: #fff;
+}
+
 .section2{
     grid-area: section;
     background-color: rgb(0, 0, 0);
@@ -204,12 +209,17 @@
     justify-content: center;
 }
 
-main div h6 {
+.newsletter h6 {
     font-size: 35px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: font-size 1s;
 }
 
-main div p{
+.newsletter h6:hover{
+    font-size: 50px;
+}
+
+.newsletter p{
     color: black;
     font-family: 'Times New Roman', Times, serif;
     margin: 10px;
@@ -273,6 +283,15 @@ input, textarea{
     border-radius: 7px;
     font-size: 15px;
 
+}
+.newsletter input{
+    width: 500px;
+    height: 30px;
+    transition: height 2s,width 1s;
+}
+.newsletter input:hover    {
+    width: 600px;
+    height: 50px;
 }
 
 #boton{
