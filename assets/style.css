@@ -304,3 +304,14 @@ input, textarea{
     cursor: pointer;
 }
 
+.nuestraHistoria h4{
+    padding: 25px;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nuestraHistoria p{
+    margin: 35px;
+    padding: 10px;
+    font-size: 20px;
+}
