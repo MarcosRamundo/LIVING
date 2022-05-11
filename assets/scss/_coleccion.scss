@@ -1,0 +1,16 @@
+$estilo_uno: (
+    gris: #a4bbe2c5
+  );
+  $estilo_dos:(
+    centro: center,
+    blanco: #FFFFFF
+  );
+
+  $merged: map-merge($estilo_uno, $estilo_dos);
+
+.main {
+background-color: map-get($merged, gris);
+text-align: map-get($merged, centro);
+padding: 2rem;
+color: map-get($merged, blanco);
+}
