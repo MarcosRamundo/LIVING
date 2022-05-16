@@ -3,20 +3,6 @@
     padding: 0;
     }
 
-
-
-.contenedor{
-    display: grid;
-    background-color: rgba(56, 52, 52, 0.192);
-    grid-template-columns: 220px 1fr 1fr 220px;
-    grid-template-rows: 25px 100px auto auto auto;
-    grid-template-areas: "div div div div"  
-                        "header header  header  header"
-                        "section section section section"
-                        "main main main main"
-                        "footer footer footer footer";
-}
-
 .encabezado{
     grid-area: div;
     background-color: rgb(8, 2, 2);
@@ -45,7 +31,8 @@
 }
 
 .header ul li{
-    list-style: none;
+  list-style: none;
+
     display: inline-block;
     font-size: 20px;
     padding: 25px;
@@ -60,86 +47,75 @@
 
 }
 
-@media (max-width: 300px){
-    .contenedor{
-        grid-template-rows: 15px auto 10px;
-    }
-    .encabezado{
-        height: 10px;
-    }
-    .encabezado h4{
-        font-size: 7px;
-    }
-    .header h1{
-        flex-direction: column;
-        font-size: 70%;
-    }
-    .header ul li{
-        flex-direction: column;
-        font-size: 15px;
-        margin: 0;
-        padding: 5px;
-    }
-    .sectionInicio{
-        width: auto;
-        order: 1;
-    }
-  
+@media screen and (max-width: 380px){
+  .contenedor{
+    width: auto;
+  }
+  .sectionInicio{
+    width: auto;
+  }
+  .header{
+    width: auto;
+  }
+  .newsletter{
+    width: 100%;
+  }
+  footer{
+    width: 100%;
+  }
 }
 
-@media (max-width: 600px){
-    .contenedor{
-        grid-template-rows: 15px auto 10px;
-    }
-    .encabezado{
-        height: 10px;
-    }
-    .encabezado h4{
-        font-size: 7px;
-    }
-    .header h1{
-        flex-direction: column;
-        font-size: 20px;
-    }
-    .header ul li{
-        flex-direction: column;
-        font-size: 15px;
-        margin: 0;
-        padding: 5px;
-    }
-    .sectionInicio{
-        width: auto;
-        order: 1; 
-    }
-    }
+@media screen and (max-width: 540px){
+  .contenedor{
+    width: auto;
+  }
+  ul {
+    font-size: 5px;
+  }
+  .sectionInicio{
+    width: auto;
+  }
+  .header{
+    width: auto;
+    height: auto;
+  }
+  .newsletter{
+    width: 100%;
+  }
+  .nuestraHistoria{
+    width: auto;
+    height: auto;
+  }
+  footer{
+    width: 100%;
+  }
+}
 
-    @media (max-width: 800px){
-        .contenedor{
-            grid-template-rows: 15px auto 10px;
-        }
-        .encabezado{
-            height: 15px;
-        }
-        .encabezado h4{
-            font-size: 10px;
-        }
-        .header h1{
-            flex-direction: column;
-            font-size: 25px;
-        }
-        .header ul li{
-            flex-direction: column;
-            font-size: 20px;
-            margin: 0;
-            padding: 10px;
-        }
-        .sectionInicio{
-            width: auto;
-            order: 1; 
-        }
-    
-        }
-
+@media screen and (max-width: 980px){
+  .contenedor{
+    width: auto;
+  }
+  .sectionInicio{
+    width: auto;
+  }
+  .section2{
+    width: auto;
+  }
+  .header{
+    width: auto;
+    height: auto;
+  }
+  .newsletter{
+    width: 100%;
+  }
+  .nuestraHistoria{
+    width: auto;
+    height: auto;
+  }
+  footer{
+    width: 100%;
+  }
+}
 
 .sectionInicio{
     grid-area: section;
